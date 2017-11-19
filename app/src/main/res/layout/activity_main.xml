@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.howsamrtareyou.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smart" />
+
+        <TextView
+            style="@style/textStyle"
+            android:layout_marginBottom="8dp"
+            android:text="Let's practice with an easy question : " />
+
+        <TextView
+            style="@style/textStyle"
+            android:text="1: multiply 2 by 2  What is the answer?" />
+
+        <EditText
+            android:id="@+id/question1_answer_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Answer"
+            android:inputType="number"
+            android:padding="8dp" />
+
+        <TextView
+            style="@style/textStyle"
+            android:text="2: Do they have a 4th of July in England?" />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                android:id="@+id/question2Option1_RadioButton"
+                style="@style/RadioButtonStyle"
+                android:text="Yes" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="3: How many birthdays does the average man have?" />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="66" />
+
+            <RadioButton
+                android:id="@+id/question3Option2_RadioButton"
+                style="@style/RadioButtonStyle"
+                android:text="1" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="72" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="4: Some months have 31 days; how many have 28?" />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                android:id="@+id/question4Option1_RadioButton"
+                style="@style/RadioButtonStyle"
+                android:text="12" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="1" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="6" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="5: Is it legal for a man in California to marry his widow's sister? " />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/question5Option2_RadioButton"
+                style="@style/RadioButtonStyle"
+                android:text="No" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="6: Divide 30 by 1/2 and add 10. What is the answer Or answers?  " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/question6Option1_CheckBox"
+                style="@style/CheckBoxStyle"
+                android:text="70" />
+
+            <CheckBox
+                android:id="@+id/question6Option2_CheckBox"
+                style="@style/CheckBoxStyle"
+                android:text="(30/0.5)+10" />
+
+            <CheckBox
+                android:id="@+id/question6Option3_CheckBox"
+                style="@style/CheckBoxStyle"
+                android:text="(30/2)+10" />
+
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/textStyle"
+            android:text="7: If there are 3 apples and you take away 2, how many do you have?  " />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/question7Option2_RadioButton"
+                style="@style/RadioButtonStyle"
+                android:text="2" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="1" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="8: How many two cent stamps are there in a dozen?" />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="6" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="9" />
+
+            <RadioButton
+                android:id="@+id/question8Option3_RadioButton"
+                style="@style/RadioButtonStyle"
+                android:text="12" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="9: A farmer has 17 sheep, and all but 9 die. How many are left? " />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="17" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/question9Option3_RadioButton"
+                style="@style/RadioButtonStyle"
+                android:text="9" />
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/textStyle"
+            android:text="10: How many animals of each sex did Moses take on the ark?  " />
+
+        <RadioGroup style="@style/RadioGroupStyle">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="1000" />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:text="499" />
+
+            <RadioButton
+                android:id="@+id/question10Option3_RadioButton"
+                style="@style/RadioButtonStyle"
+                android:text="0" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/result_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:background="#FF8A65"
+            android:onClick="result"
+            android:padding="16dp"
+            android:text="Analyze me"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+</ScrollView>
